@@ -856,7 +856,7 @@ def check_for_time_creature():
 
 def check_prerequisites(required_creatures):
     """Check if prerequisites have been met."""
-    log_file = "/home/midwife/creacher/encounters.json"
+    log_file = "./encounters.json"
 
     if not os.path.exists(log_file):
         return False
@@ -888,7 +888,7 @@ def check_for_rare_creature():
 
 def get_creature_evolution_stage(creature_name):
     """Creatures evolve based on how many times they've been seen."""
-    log_file = "/home/midwife/creacher/encounters.json"
+    log_file = "./encounters.json"
 
     if not os.path.exists(log_file):
         return 0
@@ -964,7 +964,7 @@ def get_bond_message(creature_name, evolution_stage):
 
 def check_for_milestone_event():
     """Special things happen at certain encounter counts."""
-    log_file = "/home/midwife/creacher/encounters.json"
+    log_file = "./encounters.json"
 
     if not os.path.exists(log_file):
         return None
@@ -1055,7 +1055,7 @@ def maybe_merge_creatures():
 
 def save_encounter(creature_name, creature_data):
     """Remember. Always remember."""
-    log_file = "/home/midwife/creacher/encounters.json"
+    log_file = "./encounters.json"
 
     encounter = {
         "timestamp": datetime.now().isoformat(),
@@ -1075,7 +1075,7 @@ def save_encounter(creature_name, creature_data):
 
 def show_stats():
     """Secret stats about the creatures."""
-    log_file = "/home/midwife/creacher/encounters.json"
+    log_file = "./encounters.json"
 
     if not os.path.exists(log_file):
         print("No data yet. The void is empty.")
@@ -1124,7 +1124,7 @@ def show_stats():
 
 def show_history():
     """Show all encounters that have occurred."""
-    log_file = "/home/midwife/creacher/encounters.json"
+    log_file = "./encounters.json"
 
     if not os.path.exists(log_file):
         print("No encounters recorded yet.")
@@ -1262,7 +1262,7 @@ def main():
         print()
 
     # How many times total?
-    log_file = "/home/midwife/creacher/encounters.json"
+    log_file = "./encounters.json"
     if os.path.exists(log_file):
         with open(log_file, 'r') as f:
             encounters = json.load(f)
