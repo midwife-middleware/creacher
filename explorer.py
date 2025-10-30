@@ -428,12 +428,12 @@ class Explorer:
         print()
         print("COMMANDS:")
         print("  north/south/east/west - Move in that direction")
-        print("  search - Actively search for creatures")
-        print("  look - Examine your current location")
-        print("  journal - View documented creatures")
-        print("  map - See region connections")
-        print("  help - Show this help")
-        print("  quit - Exit exploration")
+        print("  search (s) - Actively search for creatures")
+        print("  look (l) - Examine your current location")
+        print("  journal (j) - View documented creatures")
+        print("  map (m) - See region connections")
+        print("  help (h) - Show this help")
+        print("  quit (q) - Exit exploration")
         print()
 
     def show_map(self):
