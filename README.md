@@ -15,7 +15,7 @@ You are a researcher documenting beings in the mindscape. Some are common. Some 
 python3 creacher.py
 ```
 
-**Explorer mode** - Journey through regions:
+**Explorer mode** (recommended experience) - Journey through regions:
 ```bash
 python3 explorer.py
 ```
