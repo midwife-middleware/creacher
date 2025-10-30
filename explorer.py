@@ -114,7 +114,7 @@ class Explorer:
 
     def load_progress(self):
         """Load previous encounters."""
-        log_file = "/home/midwife/creacher/encounters.json"
+        log_file = "./encounters.json"
         if os.path.exists(log_file):
             with open(log_file, 'r') as f:
                 encounters = json.load(f)
